@@ -7,10 +7,10 @@ const Tag = () => {
   const { gif, loading, fetchData } = useGif(tag);
 
   return (
-    <div className=' w-1/2 bg-green-600 flex flex-col items-center border-black border rounded-[10px] gap-y-3 mb-20'>
+    <div className=' w-1/2 bg-blue-600 flex flex-col items-center border-black border rounded-[10px] gap-y-3 mb-20'>
       <h1 className=' underline mt-5 mb-3 font-bold uppercase'> A Random {tag} Gifs</h1>
       {
-        loading ? (<Spinner />) : (<img src={gif} width="450px" />)
+        loading ? (<Spinner />) : (<img src={gif} width="450px" height={"450px"} />)
       }
 
       <input type="text"

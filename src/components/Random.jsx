@@ -4,7 +4,7 @@ import Spinner from './Spinner';
 
 const Random = () => {
  
-  const { gif, loading, fetchData } = useGif()
+  const { gif, loading, fetchData } = useGif();
 
   return (
     <div className=' w-1/2 bg-green-600 flex flex-col items-center border-black border rounded-[10px] gap-y-3'>
